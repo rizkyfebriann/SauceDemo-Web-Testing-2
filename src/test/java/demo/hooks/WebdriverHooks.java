@@ -17,14 +17,12 @@ public class WebdriverHooks {
   @After(value = "@Web")
   public void quitWebdriver(Scenario scenario) {
     if (scenario.isFailed()) {
-
       try{
         final byte[] data = ((TakesScreenshot) WebdriverInstance.webdriver).getScreenshotAs(OutputType.BYTES);
         scenario.attach(data, "image/png", "Failed Screenshot");
       } catch (WebDriverException e) {
         e.printStackTrace();
       }
-
     }
     WebdriverInstance.quit();
   }
