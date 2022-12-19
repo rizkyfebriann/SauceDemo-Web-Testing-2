@@ -1,1 +1,2 @@
-# SauceDemo-Web-Testing-2
+# Run
+./gradlew clean test -Dcucumber.filter.tags="@Web"
