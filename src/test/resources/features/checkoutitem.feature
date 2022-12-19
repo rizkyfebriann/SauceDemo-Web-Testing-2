@@ -10,7 +10,7 @@ Background:
   And user go to Shopping cart page
   And user click Checkout button
 
-  
+
   @CheckoutItem
   Scenario: Checkout Item
     And user input "Rizky" and "Febrian" and "101010"
