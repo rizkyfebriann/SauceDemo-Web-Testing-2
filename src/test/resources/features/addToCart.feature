@@ -1,11 +1,12 @@
 @Web
 Feature: Search Feature
 
-  Background: User already login
-    Given user input "standard_user" and "secret_sauce"
-    And user click login button
-    Then user success login with valid account
+Background: User already login
+  Given user input "standard_user" and "secret_sauce"
+  And user click login button
+  Then user success login with valid account
 
+  
   Scenario: Add To Cart
     Given user already on product page
     And user click add to cart
