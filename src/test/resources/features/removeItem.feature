@@ -4,7 +4,7 @@ Feature: Shopping Cart Feature
 Background: User already login
   Given user already input valid username & password then login
 
-  
+
     Scenario: Remove item from shopping cart
       Given user already add item on shopping cart
       And user remove item from cart

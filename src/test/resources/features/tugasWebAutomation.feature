@@ -1,10 +1,11 @@
 @Web
 Feature: Continue Shopping
 
-  Background: User already login & add 1 item
-    Given user login with "standard_user" and "secret_sauce"
-    Then add one item to cart
+Background: User already login & add 1 item
+  Given user login with "standard_user" and "secret_sauce"
+  Then add one item to cart
 
+  
   Scenario: Continue shopping
     Given user already add one item to cart
     And user sort all item on Product page by Name (Z to A)
